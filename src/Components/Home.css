@@ -1,0 +1,38 @@
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to top right,rgb(247, 172, 185),rgb(234, 80, 106));
+  overflow: hidden;
+}
+
+.intro-content {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+  text-align: center;
+}
+
+.slide-up {
+  opacity: 100;
+  transform: translateY(0);
+}
+
+.hero-img {
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.info-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: black
+}
+
+.info-text p {
+  font-size: 20px;
+  color: #555;
+}
