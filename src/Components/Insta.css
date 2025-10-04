@@ -41,3 +41,25 @@
   border: none;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .insta-img {
+    display: none;
+  }
+
+  .login-form {
+    padding-left: 0;
+    right: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .main {
+    padding-left: 0;
+  }
+}

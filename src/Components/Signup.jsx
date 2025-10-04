@@ -1,7 +1,10 @@
 import { useRef } from "react";
 import "./Insta.css";
 import instaPic from "./Insta1.png";
+import { useNavigate } from "react-router-dom";
 function Signup() {
+  const navigate = useNavigate();
+
   const storeUser1 = useRef();
   const storePass1 = useRef();
 
@@ -16,6 +19,7 @@ function Signup() {
     localStorage.setItem("Login-details", JSON.stringify(ud1));
     storeUser1.current.value = "";
     storePass1.current.value = "";
+    navigate("/insta");
   };
   return (
     <div className="main">
