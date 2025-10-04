@@ -39,7 +39,10 @@ function Insta() {
 
   return (
     <div className="main">
-      <div className="container">
+      <div
+        className="container"
+        style={{ backgroundColor: " rgb(246, 214, 155)" }}
+      >
         <img src={instaPic} alt="My Insta Pic" className="insta-img" />
         <form className="login-form" onSubmit={lo_details}>
           <label>UserName:</label>
