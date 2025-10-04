@@ -1,26 +1,55 @@
-.reels-main{
+body{
+  background-color: #f5d3a8;
+  margin: 0;
+  padding: 0;
+  color: #3c3c3c;
+}
+
+.reels-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: bisque;
+  gap: 30px;
+  padding: 40px 20px;
 }
+
+.reels-title {
+  font-size: 2.2rem;
+  color: #c19a6b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.no-reels {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
+
 .reel-card {
   width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #e8d8c3;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
+.reel-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
 .reel-video {
-  width: 100%;
+  width: 80%;
+  padding-left: 20%;
+  padding-top: 20px;
   height: auto;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
+
 .info {
-  padding: 10px;
+  padding: 16px;
 }
-.info span {
-  color: red;
-  font-size: 14px;
-}
+
+
